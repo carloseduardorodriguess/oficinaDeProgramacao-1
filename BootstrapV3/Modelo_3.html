@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <section class="bg-secondary text-center p-3">
+            
+        <form action="">      <div class=" text-uppercase" for="Inicio"><h1>TAREFA</h1></div><br>
+            
+        
+            
+          <div class="cont">
+                <div>
+                        <div>
+                                <label class="text-danger" for="Data inicio"><h4>Data de Inicio</h4></label><br>
+                                <input id="d_ini" class="inoputdate" type="date"><br>
+                                
+                            </div>
+
+                            <div>
+                                <label class="text-danger" for="Data fim"><h4>Data de Fim</h4></label><br>       
+                                <input id="d_fim" class="inoputdate" type="date"><br>    
+                            </div>
+
+                            <div>
+                                <label class="text-danger" for="Status"><h4>Status</h4></label><br>
+                                <select  name="Status" id="status">
+                                    <option value="Novo">Novo</option>
+                                    <option value="Andamento">Andamento</option>
+                                    <option value="Atrasado">Atasado</option>
+                                </select>
+                                
+                    
+                             </div>
+                               
+                        </div>
+
+                <div>
+
+                    
+                    <label class="text-danger" for="text"><h4>Descrição</h4></label><br>
+                   <textarea name="" id="desc" cols="50" rows="5"></textarea>
+
+                </div>
+                <button class="salvar btn btn-success" onclick="save()">Salvar</button>
+                <button class="cancelar btn btn-danger " onclick="limpar()">Cancelar</button>
+          </div>
+
+          
+        </form>
+
+        
+    </section>
+
+    <table class="table table-striped  table table-bordered">
+            <thead class="bg-dark">
+                <tr>
+                    <th class="text-white">Data De Inicio</th>
+                    <th class="text-white">Data Final</th>
+                    <th class="text-white">Status</th>
+                    <th class="text-white">Descriçao</th>
+                    <th class="text-white">Opções</th>
+                </tr>
+            </thead>
+    
+            <tbody id="tbody">
+                <tr>
+                    <td>28/11/2019</td>
+                    <td>29/11/2019</td>
+                    <td>Anamento</td>
+                    <td>Trabalho BootStrep</td>
+                    <td></td>
+                </tr>
+                <tr>
+                        
+            </tbody >
+        </table>
+
+        
+
+        
+
+        
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    <script src="script.js"> </script>
+</body>
+</html>
